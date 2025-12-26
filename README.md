@@ -3,140 +3,146 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tech Solution | Smart Digital Services</title>
+<title>Tech Solution | Future Technology & Services</title>
 
 <style>
+*{box-sizing:border-box;}
 body{
     margin:0;
     font-family: 'Segoe UI', sans-serif;
-    scroll-behavior: smooth;
+    line-height:1.6;
+    background:#f4f6f8;
+    scroll-behavior:smooth;
 }
 header{
-    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
     color:#fff;
-    padding:80px 20px;
+    padding:100px 20px;
     text-align:center;
 }
-header h1{
-    font-size:3rem;
-}
+header h1{font-size:3.2rem;}
+header h3{color:#00eaff;font-weight:400;}
 header p{
-    font-size:1.2rem;
+    max-width:1000px;
+    margin:20px auto;
+    font-size:1.1rem;
 }
 .btn{
     display:inline-block;
-    padding:12px 30px;
+    padding:14px 35px;
     background:#00eaff;
     color:#000;
     text-decoration:none;
-    margin-top:20px;
-    border-radius:25px;
     font-weight:bold;
+    border-radius:30px;
+    margin-top:25px;
 }
 section{
-    padding:70px 20px;
-    max-width:1100px;
+    padding:90px 20px;
+    max-width:1200px;
     margin:auto;
 }
 h2{
     text-align:center;
-    margin-bottom:40px;
+    margin-bottom:50px;
     color:#203a43;
+    font-size:2.3rem;
 }
-.about, .services, .tech, .why{
+.grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
 }
 .card{
-    background:#f9f9f9;
-    padding:25px;
-    border-radius:12px;
-    box-shadow:0 8px 15px rgba(0,0,0,0.1);
-    text-align:center;
+    background:#fff;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
 }
+.card h4{margin-bottom:10px;}
 .contact{
     background:#203a43;
     color:#fff;
-    border-radius:15px;
+    border-radius:20px;
     padding:40px;
 }
-input, textarea{
+input,textarea{
     width:100%;
-    padding:12px;
-    margin:10px 0;
+    padding:14px;
+    margin:12px 0;
     border:none;
-    border-radius:8px;
+    border-radius:10px;
 }
 button{
-    padding:12px 30px;
-    border:none;
+    padding:14px 35px;
     background:#00eaff;
+    border:none;
+    border-radius:30px;
     font-weight:bold;
-    border-radius:25px;
     cursor:pointer;
 }
 footer{
     background:#000;
     color:#aaa;
     text-align:center;
-    padding:15px;
+    padding:20px;
 }
 </style>
 </head>
 
 <body>
 
+<!-- HERO -->
 <header>
     <h1>Tech Solution</h1>
-    <p>Innovative AI, Web & Automation Services</p>
-    <a href="#contact" class="btn">Get Started</a>
+    <h3>Future Technology & Services</h3>
+    <p>
+        At Tech Solution, our Agentic AI-powered technology services go beyond traditional development
+        by enabling self-optimizing applications, autonomous digital experiences, and data-driven
+        business strategies for Industry 4.0 & 5.0 enterprises.
+    </p>
+    <a href="#contact" class="btn">Get in Touch</a>
 </header>
 
-<section id="about">
+<!-- ABOUT -->
+<section>
     <h2>About Us</h2>
-    <div class="about">
-        <div class="card">
-            <p>We are a modern tech solution company providing smart digital services using AI, Web Development and Automation technologies.</p>
-        </div>
-        <div class="card">
-            <p>Our mission is to help businesses grow with innovative, scalable and cost-effective solutions.</p>
-        </div>
+    <p style="text-align:center;max-width:1000px;margin:auto;">
+        We deliver future-ready web, mobile, and enterprise solutions that accelerate growth,
+        enhance customer engagement, and drive digital transformation using AI, automation,
+        and cloud-native architectures.
+    </p>
+</section>
+
+<!-- SERVICES -->
+<section>
+    <h2>Our Key Services</h2>
+    <div class="grid">
+        <div class="card"><h4>Intelligent Web Platforms</h4><p>Scalable, AI-powered web applications designed for performance and growth.</p></div>
+        <div class="card"><h4>AI-Augmented Mobile Apps</h4><p>Smart mobile solutions with AI-driven personalization and automation.</p></div>
+        <div class="card"><h4>Autonomous Process Consulting</h4><p>Optimizing business workflows using Agentic AI systems.</p></div>
+        <div class="card"><h4>Digital Experience Design</h4><p>Next-generation UI/UX built for immersive customer engagement.</p></div>
+        <div class="card"><h4>Voice & Conversational AI</h4><p>Chatbots and voice assistants for intelligent interaction.</p></div>
+        <div class="card"><h4>Marketing Automation</h4><p>Data-driven marketing workflows to boost conversion rates.</p></div>
     </div>
 </section>
 
-<section id="services">
-    <h2>Our Services</h2>
-    <div class="services">
-        <div class="card">🌐 Web Development</div>
-        <div class="card">🤖 AI Solutions</div>
-        <div class="card">⚙ Automation</div>
-        <div class="card">📊 Data Analytics</div>
-    </div>
-</section>
-
-<section id="tech">
-    <h2>Technologies We Use</h2>
-    <div class="tech">
+<!-- TECHNOLOGY -->
+<section>
+    <h2>Technology Stack</h2>
+    <div class="grid">
         <div class="card">HTML • CSS • JavaScript</div>
         <div class="card">React • Node.js</div>
-        <div class="card">Python • AI/ML</div>
-        <div class="card">Cloud & DevOps</div>
+        <div class="card">Python • AI / ML</div>
+        <div class="card">API-First & Microservices</div>
+        <div class="card">Cloud-Native Architecture</div>
+        <div class="card">DevOps & Automation</div>
     </div>
 </section>
 
-<section id="why">
-    <h2>Why Choose Us?</h2>
-    <div class="why">
-        <div class="card">✔ Skilled Professionals</div>
-        <div class="card">✔ Latest Technologies</div>
-        <div class="card">✔ Affordable Pricing</div>
-        <div class="card">✔ 24/7 Support</div>
-    </div>
-</section>
-
+<!-- CONTACT -->
 <section id="contact">
-    <h2 style="color:white">Contact Us</h2>
+    <h2>Contact Us</h2>
     <div class="contact">
         <form>
             <input type="text" placeholder="Your Name" required>
